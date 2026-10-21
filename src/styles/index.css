@@ -1,0 +1,14 @@
+@import 'lenis/dist/lenis.css';
+
+@import './variables.css';
+@import './base.css';
+@import './components.css';
+@import './nav.css';
+@import './hero.css';
+@import './marquee.css';
+@import './problema.css';
+@import './metodo.css';
+@import './paquetes.css';
+@import './proyectos.css';
+@import './contacto.css';
+@import './footer.css';

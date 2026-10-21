@@ -1,0 +1,40 @@
+.marquee {
+  display: grid;
+  gap: 0.25rem;
+  padding-block: clamp(1rem, 2.5vw, 1.75rem);
+  overflow: hidden;
+}
+
+.marquee--pink {
+  background: var(--pink);
+  color: var(--ink);
+}
+
+.marquee--ink {
+  background: var(--ink);
+  color: var(--pink);
+}
+
+.marquee__row {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.marquee__group {
+  display: inline-block;
+  padding-right: 0.4em;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+/* La segunda tira va en sentido contrario y con menos peso visual. */
+.marquee__row:nth-child(2) .marquee__group {
+  font-weight: 600;
+  font-size: clamp(1.25rem, 3.2vw, 2.25rem);
+}

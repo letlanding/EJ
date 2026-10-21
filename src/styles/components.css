@@ -1,0 +1,124 @@
+/* ── Botón ─────────────────────────────────────────── */
+.btn {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  padding: 1rem 1.75rem;
+  border-radius: 999px;
+  background: var(--pink);
+  color: var(--ink);
+  transition:
+    transform 0.35s var(--ease),
+    background-color 0.35s var(--ease),
+    color 0.35s var(--ease);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background: var(--ink);
+  color: var(--pink);
+}
+
+.btn--sm {
+  padding: 0.6rem 1.1rem;
+  font-size: 0.875rem;
+}
+
+.btn--lg {
+  padding: 1.25rem 2.25rem;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+}
+
+/* Sobre fondos claros el botón invierte su par de colores. */
+.on-light .btn {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.on-light .btn:hover {
+  background: var(--clay);
+  color: var(--cream);
+}
+
+/* ── Etiqueta tipo sticker ─────────────────────────── */
+.tag {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  background: var(--pink);
+  color: var(--ink);
+  transform: rotate(-3deg);
+}
+
+/* ── Tarjeta con borde desplazado ──────────────────── */
+/* El bloque desplazado es un box-shadow sin difuminado: así queda detrás del
+   contenido sin depender del orden de apilado. */
+.card {
+  position: relative;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: 1.25rem;
+  box-shadow: var(--offset) var(--offset) 0 0 var(--ink);
+  transition:
+    transform 0.4s var(--ease),
+    box-shadow 0.4s var(--ease);
+}
+
+/* La tarjeta baja hacia el bloque y el hueco se cierra. */
+.card:hover {
+  transform: translate(calc(var(--offset) * 0.6), calc(var(--offset) * 0.6));
+  box-shadow: calc(var(--offset) * 0.4) calc(var(--offset) * 0.4) 0 0 var(--ink);
+}
+
+.card__titulo {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.card__texto {
+  margin-bottom: 1.5rem;
+  max-width: 34ch;
+}
+
+.card__items {
+  display: grid;
+  gap: 0.5rem;
+  border-top: 2px solid var(--ink);
+  padding-top: 1.25rem;
+  font-weight: 500;
+}
+
+/* ── Pantalla de carga ─────────────────────────────── */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  background: var(--ink);
+}
+
+/* El archivo deja mucho aire alrededor del monograma: se compensa con el tamaño. */
+.loader__logo {
+  width: clamp(16rem, 42vw, 34rem);
+  height: auto;
+}
+
+.loader--oculto {
+  display: none;
+}

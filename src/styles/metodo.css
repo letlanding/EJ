@@ -1,0 +1,65 @@
+.metodo {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  padding: var(--section-y) var(--gutter);
+  background: var(--blush);
+}
+
+/* Encabezado de sección por debajo del título del paso, que es el protagonista. */
+.metodo__titulo {
+  font-size: clamp(1.75rem, 4vw, 3.25rem);
+}
+
+.paso {
+  display: grid;
+  gap: 0.75rem;
+  padding-block: clamp(1.5rem, 3vw, 2.5rem);
+  border-top: 2px solid var(--ink);
+}
+
+.paso__num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  color: var(--clay);
+}
+
+.paso__titulo {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  font-size: clamp(2.5rem, 8vw, 6.5rem);
+}
+
+.paso__texto {
+  max-width: 48ch;
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+}
+
+/* ── Escritorio: la descripción acompaña a la palabra, alineada a su pie ── */
+@media (min-width: 48rem) {
+  .paso {
+    /* Proporcional y no fija: la palabra escala con 8vw y necesita que su
+       columna crezca al mismo ritmo para no desbordar cerca del corte. */
+    grid-template-columns: minmax(0, 3fr) minmax(14rem, 2fr);
+    grid-template-areas:
+      'num    .'
+      'titulo texto';
+    column-gap: clamp(2rem, 5vw, 5rem);
+    align-items: end;
+  }
+
+  .paso__num {
+    grid-area: num;
+  }
+
+  .paso__titulo {
+    grid-area: titulo;
+  }
+
+  .paso__texto {
+    grid-area: texto;
+  }
+}

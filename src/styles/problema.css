@@ -1,0 +1,13 @@
+.problema {
+  padding: var(--section-y) var(--gutter);
+  background: var(--cream);
+}
+
+.problema__titulo {
+  /* Es una frase, no una etiqueta: grande, pero por debajo de .display--xl. */
+  font-size: clamp(1.75rem, 5vw, 4.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  max-width: 22ch;
+  text-wrap: pretty;
+}

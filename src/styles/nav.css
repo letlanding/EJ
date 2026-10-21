@@ -1,0 +1,68 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 4vw, 3rem);
+  padding: 1.25rem var(--gutter);
+  padding-top: calc(1.25rem + env(safe-area-inset-top, 0px));
+  color: var(--pink);
+}
+
+/* El archivo del logo es un cuadrado con mucho aire: se encuadra al
+   monograma por CSS, sin generar un recorte aparte. */
+.nav__brand {
+  flex-shrink: 0;
+  overflow: hidden;
+  width: clamp(3.75rem, 6.5vw, 5rem);
+  height: clamp(3.75rem, 6.5vw, 5rem);
+  border-radius: 0.5rem;
+}
+
+.nav__logo {
+  width: 100%;
+  height: 100%;
+  transform: scale(2.56) translate(1.5%, 10%);
+}
+
+.nav__links {
+  display: flex;
+  gap: clamp(1rem, 2.5vw, 2rem);
+  margin-left: auto;
+  font-weight: 500;
+}
+
+.nav__links a {
+  position: relative;
+  padding-block: 0.25rem;
+}
+
+.nav__links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s var(--ease);
+}
+
+.nav__links a:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 34rem) {
+  .nav__links {
+    display: none;
+  }
+
+  .nav__cta {
+    margin-left: auto;
+  }
+}

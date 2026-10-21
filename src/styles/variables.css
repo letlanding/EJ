@@ -1,0 +1,22 @@
+:root {
+  /* Paleta extraída de assets/logo.png (ink, pink) y assets/referencia.png (blush, cream). */
+  /* Valores exactos del archivo del logo: el fondo de la imagen se funde
+     con el de las secciones oscuras. */
+  --ink: #4f1000;
+  --pink: #facbf9;
+  --blush: #e8c8d0;
+  --cream: #f4ece4;
+  --clay: #7a2414;
+
+  --font-display: 'Gabarito', system-ui, sans-serif;
+  --font-body: 'Instrument Sans', system-ui, sans-serif;
+
+  --gutter: clamp(1.25rem, 5vw, 5rem);
+  --section-y: clamp(5rem, 12vw, 11rem);
+  --maxw: 110rem;
+
+  /* Desplazamiento del borde sólido de las tarjetas. */
+  --offset: clamp(0.5rem, 1vw, 0.875rem);
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

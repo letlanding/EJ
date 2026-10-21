@@ -1,0 +1,50 @@
+.proyectos {
+  padding: var(--section-y) var(--gutter);
+  background: var(--ink);
+  color: var(--pink);
+}
+
+.proyectos__lista {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  margin-top: clamp(2.5rem, 6vw, 4.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.proyecto {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 2px solid var(--pink);
+  border-radius: 1.25rem;
+}
+
+/* Formas decorativas: el parallax las mueve dentro de la tarjeta. */
+.proyecto__forma {
+  position: absolute;
+  width: 70%;
+  aspect-ratio: 1;
+  background: var(--blush);
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.proyecto__forma--b {
+  border-radius: 2rem;
+  width: 62%;
+  aspect-ratio: 3 / 4;
+}
+
+.proyecto__forma--c {
+  border-radius: 50% 50% 50% 8%;
+  width: 66%;
+}
+
+/* La etiqueta va sobre la forma clara: invierte el par de colores. */
+.proyecto .tag {
+  position: relative;
+  background: var(--ink);
+  color: var(--pink);
+}

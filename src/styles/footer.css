@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: clamp(2rem, 5vw, 3.5rem) var(--gutter);
+  padding-bottom: calc(clamp(2rem, 5vw, 3.5rem) + env(safe-area-inset-bottom, 0px));
+  background: var(--ink);
+  color: var(--pink);
+}
+
+.footer__logo {
+  width: clamp(6rem, 12vw, 9rem);
+  height: auto;
+}
+
+.footer__nota {
+  max-width: 32ch;
+  font-size: 0.9375rem;
+}

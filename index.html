@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>E.J Estudio Web — Desarrollo web, marketing y datos</title>
+    <!-- TODO: descripción provisoria -->
+    <meta
+      name="description"
+      content="Estudio que combina desarrollo web, marketing digital y análisis de datos para hacer crecer tu negocio."
+    />
+    <link rel="icon" href="/assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600;700;900&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <div class="loader" id="loader" aria-hidden="true">
+      <img class="loader__logo" src="/assets/logo.png" alt="" width="200" height="200" />
+    </div>
+
+    <header class="nav">
+      <a class="nav__brand" href="#inicio">
+        <img class="nav__logo" src="/assets/logo.png" alt="E.J Estudio Web" width="64" height="64" />
+      </a>
+      <nav class="nav__links" aria-label="Secciones">
+        <a href="#metodo">Método</a>
+        <a href="#paquetes">Paquetes</a>
+        <a href="#proyectos">Proyectos</a>
+      </nav>
+      <a class="btn btn--sm nav__cta" href="#contacto">Contacto</a>
+    </header>
+
+    <main id="contenido">
+      <!-- ───────────────── Hero ───────────────── -->
+      <section class="hero" id="inicio">
+        <p class="hero__eyebrow">E.J Estudio Web</p>
+        <h1 class="hero__title" data-split>
+          <!-- TODO: título provisorio -->
+          Hacemos crecer tu negocio digital con diseño web, estrategias de marketing y decisiones
+          basadas en datos
+        </h1>
+        <div class="hero__foot">
+          <!-- TODO: subtítulo provisorio -->
+          <p class="hero__sub">
+            Un solo equipo para tu sitio, tus campañas y tus métricas: cada decisión respaldada por datos.
+          </p>
+          <a class="btn btn--lg" href="#contacto">Contanos tu proyecto</a>
+        </div>
+        <span class="hero__sticker" aria-hidden="true">Web + Marketing + Datos</span>
+      </section>
+
+      <!-- ───────────────── Marquee ───────────────── -->
+      <div class="marquee marquee--pink" aria-hidden="true">
+        <div class="marquee__row" data-marquee data-speed="38">
+          <span class="marquee__group">Desarrollo web · Marketing digital · Análisis de datos ·</span>
+        </div>
+        <div class="marquee__row" data-marquee data-speed="26" data-reverse>
+          <span class="marquee__group">Estudio de mercado · SEO · Campañas · Métricas ·</span>
+        </div>
+      </div>
+
+      <!-- ───────────────── Problema ───────────────── -->
+      <section class="problema" aria-labelledby="problema-titulo">
+        <h2 class="problema__titulo display" id="problema-titulo" data-split data-reveal>
+          <!-- TODO: texto provisorio -->
+          Tener un sitio web no alcanza si nadie lo visita; hacer marketing no sirve si no se pueden
+          medir los resultados.
+        </h2>
+      </section>
+
+      <!-- ───────────────── Método ───────────────── -->
+      <section class="metodo" id="metodo" aria-labelledby="metodo-titulo">
+        <h2 class="display metodo__titulo" id="metodo-titulo" data-split data-reveal>Nuestro método</h2>
+
+        <ol class="metodo__pasos">
+          <li class="paso" data-reveal>
+            <span class="paso__num" aria-hidden="true">01</span>
+            <h3 class="paso__titulo">Entender</h3>
+            <!-- TODO: texto provisorio -->
+            <p class="paso__texto">
+              Analizamos tus datos, cómo está organizado tu negocio y a quién le estás vendiendo.
+              Antes de construir nada, entendemos el mercado en el que competís.
+            </p>
+          </li>
+          <li class="paso" data-reveal>
+            <span class="paso__num" aria-hidden="true">02</span>
+            <h3 class="paso__titulo">Construir</h3>
+            <!-- TODO: texto provisorio -->
+            <p class="paso__texto">
+              Desarrollamos el sitio web: rápido, claro y pensado para que la gente haga lo que
+              tiene que hacer.
+            </p>
+          </li>
+          <li class="paso" data-reveal>
+            <span class="paso__num" aria-hidden="true">03</span>
+            <h3 class="paso__titulo">Atraer</h3>
+            <!-- TODO: texto provisorio -->
+            <p class="paso__texto">
+              Marketing digital para que te encuentren: anuncios, SEO y contenido que llega a la
+              gente correcta.
+            </p>
+          </li>
+          <li class="paso" data-reveal>
+            <span class="paso__num" aria-hidden="true">04</span>
+            <h3 class="paso__titulo">Optimizar</h3>
+            <!-- TODO: texto provisorio -->
+            <p class="paso__texto">
+              Medimos métricas y embudos, y ajustamos la web y las campañas con lo que los números
+              muestran.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ───────────────── Marquee ───────────────── -->
+      <div class="marquee marquee--ink" aria-hidden="true">
+        <div class="marquee__row" data-marquee data-speed="30">
+          <span class="marquee__group">Entender · Construir · Atraer · Optimizar ·</span>
+        </div>
+      </div>
+
+      <!-- ───────────────── Paquetes ───────────────── -->
+      <section class="paquetes" id="paquetes" aria-labelledby="paquetes-titulo">
+        <h2 class="display display--xl" id="paquetes-titulo" data-split data-reveal>Paquetes</h2>
+        <ul class="paquetes__lista">
+          <li class="card" data-reveal>
+            <h3 class="card__titulo">Lanzamiento</h3>
+            <!-- TODO: texto provisorio -->
+            <p class="card__texto">
+              Estudio de mercado, sitio web y medición básica configurada desde el día uno.
+            </p>
+            <ul class="card__items">
+              <li>Estudio de mercado</li>
+              <li>Desarrollo web</li>
+              <li>Tracking básico</li>
+            </ul>
+          </li>
+          <li class="card" data-reveal>
+            <h3 class="card__titulo">Aceleración</h3>
+            <!-- TODO: texto provisorio -->
+            <p class="card__texto">
+              Todo lo de Lanzamiento, más las campañas para empezar a traer visitas.
+            </p>
+            <ul class="card__items">
+              <li>Todo lo de Lanzamiento</li>
+              <li>Marketing digital</li>
+              <li>Anuncios y SEO</li>
+            </ul>
+          </li>
+          <li class="card" data-reveal>
+            <h3 class="card__titulo">Escala</h3>
+            <!-- TODO: texto provisorio -->
+            <p class="card__texto">
+              Trabajo continuo sobre campañas y sitio, con reportes todos los meses.
+            </p>
+            <ul class="card__items">
+              <li>Gestión de campañas</li>
+              <li>Mantenimiento web</li>
+              <li>Reportes mensuales</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ───────────────── Proyectos ───────────────── -->
+      <section class="proyectos" id="proyectos" aria-labelledby="proyectos-titulo">
+        <h2 class="display display--xl" id="proyectos-titulo" data-split data-reveal>Proyectos</h2>
+        <!-- TODO: reemplazar por casos reales cuando existan -->
+        <ul class="proyectos__lista">
+          <li class="proyecto" data-reveal>
+            <div class="proyecto__forma" data-parallax aria-hidden="true"></div>
+            <span class="tag">Próximamente</span>
+          </li>
+          <li class="proyecto" data-reveal>
+            <div class="proyecto__forma proyecto__forma--b" data-parallax aria-hidden="true"></div>
+            <span class="tag">Próximamente</span>
+          </li>
+          <li class="proyecto" data-reveal>
+            <div class="proyecto__forma proyecto__forma--c" data-parallax aria-hidden="true"></div>
+            <span class="tag">Próximamente</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ───────────────── Contacto ───────────────── -->
+      <section class="contacto on-light" id="contacto" aria-labelledby="contacto-titulo">
+        <h2 class="display display--xl" id="contacto-titulo" data-split data-reveal>Hablemos</h2>
+        <!-- TODO: texto provisorio -->
+        <p class="contacto__texto">
+          Contanos en qué estás y te respondemos con una propuesta concreta.
+        </p>
+        <div class="contacto__acciones">
+          <!-- TODO: número de WhatsApp provisorio -->
+          <a class="btn btn--lg" href="https://wa.me/5490000000000">Escribinos por WhatsApp</a>
+          <!-- TODO: email provisorio -->
+          <a class="contacto__mail" href="mailto:hola@ejestudioweb.com">hola@ejestudioweb.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img class="footer__logo" src="/assets/logo.png" alt="E.J Estudio Web" width="120" height="120" />
+      <p class="footer__nota">Desarrollo web, marketing digital y análisis de datos.</p>
+    </footer>
+  </body>
+</html>
